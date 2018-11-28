@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Loops</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Open the console to see the magic!</h1>
+
+
+  <div class="images">
+
+  </div>
+  <script>
+    for (var i = 0; i < 50; i++) {
+      var img = $('<img>');
+      img.attr('src', 'https://avatars0.githubusercontent.com/u/16419909?v=4');
+
+      $('.images').append(img);
+    }
+
+  </script>
+
+</body>
+
+</html>

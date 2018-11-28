@@ -25,6 +25,12 @@
       // Let's start by grabbing a reference to the <span> below.
       var userText = document.getElementById("user-text");
 
+      var body = document.querySelector('body');
+
+      body.onoffline = function() {
+        alert('What the heck?');
+      }
+
       // Next, we give JavaScript a function to execute when onkeyup event fires.
       document.onkeyup = function(event) {
         userText.textContent = event.key;
