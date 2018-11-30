@@ -6,23 +6,32 @@
   </head>
   <body>
 
-    <h1>Open the console to see the magic!</h1>
+    <h1>Open the to see the magic!</h1>
 
     <script>
 
       // FUNCTIONS
       // ================================================================================
-
+      var log = console.log;
       // Create a Function called "adder" that take three arguments (x, y, z).
-      // The function should add the arguments together, and log the result to the console.
+      // The function should add the arguments together, and log the result to the 
+      function adder( x, y, z ) {
+        log( x + y + z);
+      }
 
+      adder( 34, 20, 50 );
 
       // Create a Function called "multiplier" that takes three arguments (x, y, z).
-      // The function should multiply the arguments, and log the result to the console.
+      // The function should multiply the arguments, and log the result to the 
 
+      function multiplier( x, y, z ) {
+        log( x * y * z );
+      }
+
+      multiplier( 2, 3, 5 );
 
       // Create a Function called "isString" that takes three arguments (x, y, z).
-      // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
+      // "isString" determines if all three arguments are strings and logs an appropriate response to the 
 
 
       // Create a Function called "vowelChecker" that takes in a single argument (x).
@@ -45,35 +54,35 @@
       // Call the adder function here.
 
 
-      console.log("-------------------");
+      log("-------------------");
 
 
       // Call the multiplier function here.
 
 
-      console.log("-------------------");
+      log("-------------------");
 
 
       // Call the isString function here.
 
 
-      console.log("-------------------");
+      log("-------------------");
 
 
       // Call the vowelChecker function here.
 
 
-      console.log("-------------------");
+      log("-------------------");
 
 
       // BONUS
-      // Call the adderReturn function here and set it equal to a variable. Then log that variable to the console.
+      // Call the adderReturn function here and set it equal to a variable. Then log that variable to the 
 
 
-      console.log("-------------------");
+      log("-------------------");
 
 
-      // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
+      // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the 
 
     </script>
 
