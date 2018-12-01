@@ -5,7 +5,7 @@
   <title>Basic jQuery Dump</title>
 
   <!-- Added link to the jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -15,9 +15,12 @@
   <script type="text/javascript">
 
     // Thanks to jQuery's handy $ selector ... we have a wealth of new methods for selecting and manipulating HTML.
-
+    let emptyDiv = document.getElementById('empty-div');
+    let title = document.createElement('h1');
+      title.textContent = 'Hello Friends!';
+    emptyDiv.appendChild(title);
     // Here we are using jQuery's .HTML method to instantly select and change the contents of our empty-div.
-    $("#empty-div").html("<h1>Hello friends!</h1>");
+    $("#empty-div").html("");
 
     // We can just as easily append a new line using a similarly simple .append method.
     $("#empty-div").append("A pleasure to meet you!");

@@ -10,9 +10,12 @@
   <hr>
 
   <!-- Here we create a generic drink-options div -->
-  <div id="drink-options"></div>
+  <div id="drink-options">
+    
+  </div>
 
   <script type="text/javascript">
+
 
     // Array holds all of the drinks available
     var drinkList = [
@@ -30,7 +33,7 @@
     // 1. Create code that "grabs" the div with the matching id (#drink-options);
     // ...
 
-
+  let div = document.querySelector('.test');
     // ...
 
 
@@ -38,7 +41,13 @@
     // HINT: You will need to use each of the following methods: createElement, textContent, appendChild
     // ...
 
-
+    for (var i = 0; i < drinkList.length; i++) {
+      let p = document.createElement('p');
+      p.textContent = drinkList[ i ];
+      
+      div.appendChild( p );
+      console.log(p);
+    }
     // ...
 
   </script>
