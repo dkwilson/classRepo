@@ -17,12 +17,20 @@
 
     <!-- Script -->
     <script type="text/javascript">
-
+      var name = 'Accime Esterling';
       // We define a person, and include a method that logs his name along with a greeting.
-      var person = {
+      var person1 = {
         name: "Jeff",
         sayHi: function() {
-          console.log("Hi, I'm " + this.name);
+          console.log("Hi, I'm " + person1.name);
+          console.log(this);
+        }
+      };
+
+      var person2 = {
+        name: "Jeff",
+        sayHi: function() {
+          console.log("Hi, I'm " + person.name);
           console.log(this);
         }
       };
