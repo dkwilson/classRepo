@@ -4,7 +4,7 @@
 window.onload = function() {
 
   //  Click events are done for us:
-  $("#lap").click(stopwatch.recordLap);
+  $("#lap").on('click', function() {}  );
   $("#stop").click(stopwatch.stop);
   $("#reset").click(stopwatch.reset);
   $("#start").click(stopwatch.start);
