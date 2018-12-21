@@ -37,22 +37,23 @@ function flipThatCoin(result) {
   //  Find the div with an id of wins. Update it with the value of the wins variable.
 
   if (result === randomNumber) {
-    wins++; // increment
+    wins++;
     $("#win-lose").html("<h2>Winner!</h2>");
     $("#wins").html("<h3>" + wins + "</h3>");
-    return;
   }
 
   //  Else:
   //  Increment losses by one.
   //  Find the div with an id of win-lose. Update it with an h2 of "Loser!"
   //  Find the div with an id of losses. Update it with the value of the losses variable.
-  losses++;
-  $("#win-lose").html("<h2>Loser!</h2>");
-  $("#losses").html("<h3>" + losses + "</h3>");
+  else {
+    losses++;
+    $("#win-lose").html("<h2>Loser!</h2>");
+    $("#losses").html("<h3>" + losses + "</h3>");
+  }
 }
 
-$("#heads").on("click", function () {
+$("#heads").on("click", function() {
   headsCount++;
   $("#heads-chosen").text(headsCount);
   $("#guess").html("<b>Heads</b>");
@@ -65,7 +66,7 @@ $("#heads").on("click", function () {
 //  Find the div with an id of guess. Update it with the word "Tails" bolded.
 //  Call the flipThatCoin function and pass value 1 into it.
 
-$("#tails").on("click", function () {
+$("#tails").on("click", function() {
   tailsCount++;
   $("#tails-chosen").text(tailsCount);
   $("#guess").html("<b>Tails</b>");
