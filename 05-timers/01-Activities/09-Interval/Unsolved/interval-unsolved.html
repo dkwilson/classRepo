@@ -28,14 +28,11 @@
 
     var intervalId;
 
-    let isTimerRunning = false;
-
     $("#stop").on("click", stop);
 
     $("#resume").on("click", run);
 
     function run() {
-      isTimerRunning = true;
       intervalId = setInterval(decrement, 1000);
     }
 
